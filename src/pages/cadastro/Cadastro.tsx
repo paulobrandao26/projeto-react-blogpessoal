@@ -51,7 +51,7 @@ async function cadastrarNovoUsuario(e: FormEvent<HTMLFormElement>){
     try{
       await cadastrarUsuario('/usuarios/cadastrar', usuario, setUsuario)
       alert('Usuário cadastrado com sucesso!')
-    }catch(_error) {
+    }catch(error) {
       alert('Erro ao cadastrar o usuário!')
     }
   }else{
