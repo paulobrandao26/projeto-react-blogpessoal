@@ -1,15 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
+import DeletarPostagem from "./components/Postagem/deletarpostagem/DeletarPostagem";
+import FormPostagem from "./components/Postagem/formpostagem/FormPostagem";
+import ListaPostagem from "./components/Postagem/listapostagem/ListaPostagem";
+import DeletarTema from "./components/tema/deletartema/DeletarTema";
+import FormTema from "./components/tema/formtema/FormTema";
 import ListaTemas from "./components/tema/listatemas/ListaTemas";
 import { AuthProvider } from "./contexts/AuthContext";
 import Cadastro from "./pages/cadastro/Cadastro";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
-import FormTema from "./components/tema/formtema/FormTema";
-import DeletarTema from "./components/tema/deletartema/DeletarTema";
-import ListaPostagem from "./components/Postagem/listapostagem/ListaPostagem";
-import FormPostagem from "./components/Postagem/formpostagem/FormPostagem";
 function App (){
 
   return(
@@ -28,7 +29,8 @@ function App (){
             <Route path="/deletartema/:id" element={<DeletarTema />} />
             <Route path="/postagem" element={<ListaPostagem />} />  
             <Route path="/cadastrarpostagem" element={<FormPostagem />} />
-            <Route path="/editarpostagem/:id" element={<FormPostagem />} />      
+            <Route path="/editarpostagem/:id" element={<FormPostagem />} />    
+            <Route path="/deletarpostagem/:id" element={<DeletarPostagem />} />  
           </ Routes>
         </div>
         <Footer/>
