@@ -96,8 +96,9 @@ async function cadastrarNovoUsuario(e: FormEvent<HTMLFormElement>){
               name="usuario"
               placeholder="Usuario"
               className="border-2 border-slate-700 rounded p-2"
-            />value={usuario.usuario}
+            value={usuario.usuario}
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
+              />
           </div>
 
           <div className="flex flex-col w-full">
