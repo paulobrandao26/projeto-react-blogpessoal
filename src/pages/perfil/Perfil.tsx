@@ -20,9 +20,10 @@ function Perfil() {
 			<div className="container mx-auto my-4 rounded-2xl overflow-hidden">
 				<img
 					className="w-full h-72 object-cover border-b-8 border-white"
-					src="https://i.imgur.com/ZZFAmzo.jpg"
-					alt="Capa do Perfil"
-				/>
+				src="/capa-do-site.jpg"
+        alt="Capa do Perfil" 
+        />
+				
 
 				<img
 					className="rounded-full w-56 mx-auto mt-[-8rem] border-8 border-white relative z-10"
@@ -36,6 +37,7 @@ function Perfil() {
 				>
 					<p>Nome: {usuario.nome} </p>
 					<p>Email: paulobrandaohbb@gmail.com</p>
+          <p>Desenvolvedor Full Stack em formação, apaixonado por tecnologia.</p>
 				</div>
 			</div>
 		</div>

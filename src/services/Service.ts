@@ -7,6 +7,7 @@ const api = axios.create({
 export const cadastrarUsuario = async (
   url: string,
   dados: object,
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
   setDados: Function,
 ) => {
   const resposta = await api.post(url, dados);
