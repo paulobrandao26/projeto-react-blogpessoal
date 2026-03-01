@@ -35,7 +35,7 @@ function Perfil() {
                     bg-sky-500 text-white text-2xl items-center justify-center"
 				>
 					<p>Nome: {usuario.nome} </p>
-					<p>Email: {usuario.usuario}</p>
+					<p>Email: paulobrandaohbb@gmail.com</p>
 				</div>
 			</div>
 		</div>
